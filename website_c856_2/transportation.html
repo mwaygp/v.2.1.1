@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti - Transportation</title>
+    <link rel="stylesheet" href="transport.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/logo.jpg" alt="TANITI Logo" class="logo-img">
+            <span class="logo-text">TANITI</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Hotel.html">Hotel</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="itinerary.html">Things to Do</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">Search</button>
+        </div>        
+    </header>
+
+    <section id="transportation">
+        <h2>It’s time to explore</h2>
+        <p>You may be wondering how we will get from one destination to another throughout the island. Well, Taniti offers visitors public buses that serve Taniti City and run from 5 a.m. to 11 p.m. every day. Private buses are also served throughout the island. Taxis are available in Taniti City, and rental cars can be rented from a local rental agency near the airport. Bikes and helmets are available to rent from several vendors. Make sure to wear your helmet as it's required by LAW! If you're feeling adventurous, you can walk on foot.</p>
+        
+        <div class="search-section">
+            <h2>Search Vehicles</h2>
+            <div class="search-form">
+                <div class="form-group">
+                    <label for="pickup">Vehicle</label>
+                    <input type="text" id="pickup" name="vehicle">
+                </div>
+<!--                 <div class="form-group">
+                    <label for="sameAsPickup">Same as pick-up</label>
+                    <input type="checkbox" id="sameAsPickup" name="sameAsPickup">
+                </div> -->
+                <div class="form-group">
+                    <label for="pickupDate">Pick-up date</label>
+                    <input type="date" id="pickupDate" name="pickupDate">
+                </div>
+                <div class="form-group">
+                    <label for="dropOffDate">Drop-off date</label>
+                    <input type="date" id="dropOffDate" name="dropOffDate">
+                </div>
+                <div class="form-group">
+                    <label for="pickupTime">Pick-up time</label>
+                    <input type="time" id="pickupTime" name="pickupTime">
+                </div>
+                <div class="form-group">
+                    <label for="dropOffTime">Drop-off time</label>
+                    <input type="time" id="dropOffTime" name="dropOffTime">
+                </div>
+                <button type="button" class="search-button">Search</button>
+            </div>
+        </div>
+
+        <div class="popular-rentals">
+            <h2>Popular Rental Car Choices</h2>
+            <div class="rental-options">
+                <img src="photos/suv.jpg" alt="SUV Rentals">
+                <img src="photos/van.jpg" alt="Passenger Van Rentals">
+                <img src="photos/premium.jpg" alt="Premium Car Rentals">
+                <img src="photos/convertable.jpg" alt="Convertible/Luxury Car Rentals">
+                <img src="photos/truck.jpg" alt="Pickup Truck Rentals">
+                <img src="photos/economy.jpg" alt="Economy Car Rentals">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Hotel.html">Hotel</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="itinerary.html">Things to Do</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2024 Taniti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Do you want to clear the search results?</p>
+            <button type="button" onclick="clearHighlights()">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

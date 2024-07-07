@@ -1,0 +1,433 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+} */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+    padding: 20px 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.input-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.input-group button:hover {
+    background-color: #218838;
+}
+
+.extra-links {
+    margin-top: 20px;
+}
+
+.extra-links a {
+    display: block;
+    color: #007bff;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.extra-links a:hover {
+    text-decoration: underline;
+}
+
+
+/* new code */
+
+body { 
+    font-family: Arial, sans-serif; /* Set default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Set background color */
+    color: #333; /* Set default text color */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange children in column */
+    min-height: 100vh; /* Set minimum height to viewport height */
+    height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Space items evenly */
+    align-items: center; /* Center items vertically */
+}
+
+header .logo {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px; /* Add margin to separate logo from the left edge */
+}
+
+/* Navigation styles */
+nav {
+    margin-left: auto; /* Adjust the margin to move the navigation bar to the left */
+    margin-right: auto; /* Center the navigation bar horizontally */
+    max-width: auto; /* Example maximum width */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center navigation links horizontally */
+    align-items: center; /* Center navigation vertically */
+    flex: 1; /* Allow navigation to take up remaining space */
+}
+
+nav ul li {
+    margin: 0 20px; /* Add margin between navigation links */
+    text-align: center; /* Align text in the middle */
+}
+
+nav ul li a {
+    color: white; /* Set navigation link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Set navigation link font weight */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Main content container */
+main {
+    flex: 1; /* Expand to fill remaining vertical space */
+}
+
+/* Section styles */
+section {
+    padding: 20px; /* Add padding */
+    margin: 20px auto; /* Center-align section */
+    max-width: 1200px; /* Set maximum width */
+    background-color: white; /* Set background color */
+    border-radius: 8px; /* Add border radius */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow */
+}
+
+section img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Add border radius */
+}
+
+/* Text box styles */
+.text-box {
+    padding: 20px; /* Add padding */
+    margin-bottom: 20px; /* Add margin */
+}
+
+/* Footer styles */
+footer {
+    background-color: #4CAF50; /* Set footer background color */
+    color: white; /* Set footer text color */
+    padding: 5px 0; /* Reduce padding */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space items evenly */
+    max-width: 1100px; /* Set maximum width */
+    margin: 0 auto; /* Center the footer content horizontally */
+    padding: 0px 0; /* Reduce padding */
+    background-color: #4CAF50; /* Ensure the background color is applied to this container */
+    border-radius: 8px; /* Add border radius for a smoother look */
+}
+
+.footer-content .social-media {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center icons vertically */
+}
+
+.footer-content nav {
+    flex: 1; /* Allow navigation to grow */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center navigation links */
+    margin-left: 30px; /* Push the nav links more to the left */
+}
+
+.footer-content nav ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center navigation links */
+    align-items: center; /* Center navigation vertically */
+}
+
+.footer-content nav ul li {
+    margin: 0 5px; /* Reduce margin between navigation links */
+}
+
+.footer-content nav ul li a {
+    color: white; /* Set navigation link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Set navigation link font weight */
+    font-size: 12px; /* Reduce font size */
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.footer-content .social-media a {
+    color: white; /* Set icon color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 5px; /* Reduce margin between icons */
+    font-size: 12px; /* Reduce font size */
+}
+
+/* Align the copyright text to the right */
+.footer-content .copyright {
+    text-align: right; /* Align text to the right */
+    margin-left: auto; /* Push the copyright text to the far right */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 12px; /* Reduce font size */
+}
+
+
+/* Contact information styles */
+#contact-info {
+    font-size: 14px; /* Set font size */
+}
+
+#contact-info a {
+    color: white; /* Set link color */
+    text-decoration: none; /* Remove underline */
+}
+
+#contact-info a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* New code below for style */
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.contact h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact input[type="number"],
+.contact textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    height: 120px;
+}
+
+.contact button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.contact button[type="submit"]:hover {
+    background-color: #555;
+}
+
+img {
+    width: 200px; /* Set the width of all images */
+    height: 150px; /* Set the height of all images */
+}
+
+
+
+
+/* MAKING CHANGES TO THE CODE */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    width: 200px;
+}
+
+.search-bar button[type="button"] {
+    padding: 8px 15px;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-bar button[type="button"]:hover {
+    background-color: #333;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.clear-button-container {
+    display: none;
+    text-align: center; /* Center the button */
+}
+
+.clear-button-container button[type="button"] {
+    padding: 8px 15px;
+    border: none;
+    background-color: #f44336; /* Red color for the clear button */
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.clear-button-container button[type="button"]:hover {
+    background-color: #d32f2f; /* Darker red on hover */
+}
+
+.logo {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    text-decoration: none; /* Remove underline from anchor tag */
+}
+
+
+.logo-img {
+    width: 40px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    border-radius: 50%; /* Make the image round */
+    margin-right: 10px; /* Add some spacing between logo and text */
+}
+
+.logo-text {
+    font-size: 18px; /* Increase font size */
+    color: #333; /* Text color */
+} 

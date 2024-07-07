@@ -1,0 +1,388 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 100px; /* Adjust padding to make space for the footer */
+}
+
+header {
+    background-color: #003B6D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .consultation {
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+nav {
+    background-color: #003B6D;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin: -60px 20px 0;
+    line-height: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.hero {
+    background-color: #6699CC;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero .cta-button {
+    background-color: #003B6D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.about, .services, .contact {
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-box {
+    text-align: center;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.service-box img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.service-box h3 {
+    margin-top: 10px;
+}
+
+.age-group {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.age-group h2 {
+    margin-bottom: 10px;
+}
+
+.age-group-content {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.age-group-content h2 {
+    margin-top: 0; /* Remove default margin */
+    text-align: center; /* Align the heading to the center */
+}
+
+/* changes made here for adjustments */
+/* .cat-age {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+
+.cat-age {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin to create space underneath */
+}
+
+.cat-age h2 {
+    margin-top: 0; /* Remove default margin */
+    text-align: center; /* Align the heading to the center */
+}
+
+
+.cat-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.cat-images img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background-color: #003B6D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    margin-left: 30px;
+}
+
+footer p.copyright {
+    margin-left: 0px; /* Adjust left margin to move the copyright notice a bit to the left */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .header-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .consultation {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;  /* added column */
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .service-box {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .cat-images img {
+        width: calc(33.33% - 20px); /* Set width to one-third of the container minus margin */
+        max-width: 150px; /* Set maximum width for the images */
+        height: auto; /* Maintain aspect ratio */
+        margin: 10px; /* Add margin between images */
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .consultation {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    header .search-bar input,
+    header .search-bar button {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 5px 10px; /* Add padding to give words some space */
+    }
+
+    nav ul li a {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero .cta-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .about, .services, .contact {
+        padding: 15px;
+    }
+
+    .contact form input,
+    .contact form select,
+    .contact form textarea,
+    .contact form button {
+        font-size: 14px;
+    }
+}
+
+

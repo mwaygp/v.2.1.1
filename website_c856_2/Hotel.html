@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti - Hotel</title>
+    <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/logo.jpg" alt="TANITI Logo" class="logo-img">
+            <span class="logo-text">TANITI</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Hotel.html">Hotel</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="itinerary.html">Things to Do</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">Search</button>
+        </div>      
+    </header>
+
+    <section id="hotel">
+        <h2>Where are we staying?</h2>
+        <p>Taniti has a wide variety of hotels that range from an inexpensive hostel to one large four-star resort! There are many small family-owned hotels and a growing number of bed and breakfasts. Most of all, all hotels give the best of the best experiences! Pick the hotel you want and have the best time of your life!</p>
+        <div class="search-container">
+            <input type="text" placeholder="Where to?" id="location">
+            <input type="date" id="checkin">
+            <input type="date" id="checkout">
+            <select id="travelers">
+                <option value="1">1 traveler</option>
+                <option value="2">2 travelers</option>
+                <option value="3">3 travelers</option>
+                <option value="4">4 travelers</option>
+                <option value="5">5 travelers</option>
+            </select>
+            <button type="button" onclick="searchHotels()">Search</button>
+        </div>
+
+        <!-- New HTML for hotel images -->
+        <div class="hotel-images">
+            <div class="hotel-image">
+                <img src="photos/hotel1.jpg" alt="Hotel 1">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel2.jpg" alt="Hotel 2">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel3.jpg" alt="Hotel 3">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel4.jpg" alt="Hotel 4">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel5.jpg" alt="Hotel 5">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel6.jpg" alt="Hotel 6">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel7.jpg" alt="Hotel 6">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel8.jpg" alt="Hotel 6">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel9.jpg" alt="Hotel 6">
+                <p></p>
+            </div>
+            <div class="hotel-image">
+                <img src="photos/hotel10.jpg" alt="Hotel 6">
+                <p></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Hotel.html">Hotel</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="itinerary.html">Things to Do</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2024 Taniti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Do you want to clear the search results?</p>
+            <button type="button" onclick="clearHighlights()">Clear</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradigm Pet Professionals</title>
+    <link rel="stylesheet" href="consult.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="photos/logo.png" alt="Paradigm Pet Professionals Logo">
+            </a>
+            <span>Pexperts</span>
+        </div>
+        <div class="header-right">
+            <a href="consult.html">
+                <button class="consultation">Request a Consultation</button>
+            </a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+                <button>Go</button>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cat.html">Cats</a></li>
+            <li><a href="dog.html">Dogs</a></li>
+            <li><a href="fish.html">Fish</a></li>
+            <li><a href="faq.html">FAQs</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="about">
+            <h2>Please fill out our contact form to request a consultation. We will contact you within 48 hours to schedule a consultation. All fields are required.</h2>
+        </section>    
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+        
+                <label for="pet-type">Pet Type:</label>
+                <select id="pet-type" name="pet-type" required>
+                    <option value="">Select Pet Type</option>
+                    <option value="dog">Dog</option>
+                    <option value="cat">Cat</option>
+                    <option value="fish">Fish</option>
+                </select>
+        
+                <label for="timezone">Timezone:</label>
+                <select id="timezone" name="timezone" required>
+                    <option value="">Select Timezone</option>
+                    <option value="Pacific/Midway">(GMT-11:00) Midway Island</option>
+                    <option value="Pacific/Honolulu">(GMT-10:00) Hawaii</option>
+                    <option value="America/Anchorage">(GMT-09:00) Alaska</option>
+                    <option value="America/Los_Angeles">(GMT-08:00) Pacific Time (US & Canada)</option>
+                    <option value="America/Denver">(GMT-07:00) Mountain Time (US & Canada)</option>
+                    <option value="America/Chicago">(GMT-06:00) Central Time (US & Canada)</option>
+                    <option value="America/New_York">(GMT-05:00) Eastern Time (US & Canada)</option>
+                    <option value="America/Caracas">(GMT-04:30) Caracas</option>
+                    <option value="America/Halifax">(GMT-04:00) Atlantic Time (Canada)</option>
+                    <option value="America/Argentina/Buenos_Aires">(GMT-03:00) Buenos Aires</option>
+                    <option value="America/Sao_Paulo">(GMT-03:00) Brasilia</option>
+                    <option value="Atlantic/South_Georgia">(GMT-02:00) Mid-Atlantic</option>
+                    <option value="Atlantic/Azores">(GMT-01:00) Azores</option>
+                    <option value="Europe/London">(GMT+00:00) London</option>
+                    <option value="Europe/Paris">(GMT+01:00) Paris</option>
+                    <option value="Europe/Istanbul">(GMT+02:00) Istanbul</option>
+                    <option value="Europe/Moscow">(GMT+03:00) Moscow</option>
+                    <option value="Asia/Dubai">(GMT+04:00) Dubai</option>
+                    <option value="Asia/Karachi">(GMT+05:00) Karachi</option>
+                    <option value="Asia/Dhaka">(GMT+06:00) Dhaka</option>
+                    <option value="Asia/Bangkok">(GMT+07:00) Bangkok</option>
+                    <option value="Asia/Shanghai">(GMT+08:00) Beijing</option>
+                    <option value="Asia/Tokyo">(GMT+09:00) Tokyo</option>
+                    <option value="Australia/Sydney">(GMT+10:00) Sydney</option>
+                    <option value="Pacific/Fiji">(GMT+12:00) Fiji</option>
+                </select>
+        
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="terms.html">Terms of Service</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+        </ul>
+        <p class="copyright">&copy; 2024 Paradigm Pet Professionals</p>
+    </footer>
+    <script src="consult.js"></script>
+</body>
+</html>

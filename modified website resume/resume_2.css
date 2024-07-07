@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #555;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+.links p, .profile p, .skills p, .languages p {
+    margin: 5px 0;
+}
+
+.skill-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.job, .certification, .education-entry {
+    margin-bottom: 15px;
+}
+
+.date-range {
+    font-weight: bold;
+}
+
+.position, .certification-name, .degree {
+    font-weight: bold;
+    margin: 0;
+}
+
+.location {
+    font-style: italic;
+    color: #777;
+}
+
+.description {
+    margin: 5px 0 0;
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 768px) {
+    .resume-container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+
+    .skill-group {
+        flex-direction: column;
+    }
+
+    .skill-group p {
+        margin: 2px 0;
+    }
+}
+
+
+.back-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.back-button a:hover {
+    background-color: #3498db;
+    color: #fff;
+}

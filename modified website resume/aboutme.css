@@ -1,0 +1,354 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    color: #777;
+    margin: 0;
+}
+
+header .search {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+header .search input {
+    width: 48%; /* Decreased width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+header .search button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+
+header .search button:hover {
+    background-color: #2980b9;
+}
+
+.highlight {
+    background-color: yellow;
+    /* font-weight: normal; */
+}
+
+/* main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .about {
+    display: flex;
+    align-items: flex-start;
+    flex: 1;
+    max-width: 60%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+} */
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Add spacing between sections */
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    width: 130%; /* Increased width to match search bar */
+    max-width: 130%; /* Set a max-width for better responsiveness */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Add margin-bottom to separate sections */
+    margin-left: -90px;
+    margin-right: auto;
+}
+
+.additional-info {
+    width: 130%; /* Adjusted width to match .about */
+    max-width: 800px; /* Set a max-width for better responsiveness */
+    display: flex;
+    flex-direction: column; /* Stack recent changes and sidebar vertically */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    gap: 20px; /* Add space between recent changes and sidebar */
+    margin-left: -90px;
+    margin-right: auto;
+}
+
+.recent-changes {
+    padding: 20px;
+    background-color: #fff; /* Ensuring background color matches .about */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.recent-changes h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+.about h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.about p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.profile-pic {
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.profile-pic img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+/* aside {
+    flex: 1;
+    max-width: 35%;
+    padding: 20px;
+} */
+
+aside {
+    width: 75%; /* Adjust this percentage to your desired width */
+    max-width: 800px; /* Set a max-width for better responsiveness */
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #3498db;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.back-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.back-button a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 10px; /* Add padding to center content */
+    }
+
+    .about {
+        width: 100%; /* Full width */
+        max-width: 800px; /* Set a max-width for better responsiveness */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        padding: 20px 10px; /* Adjust padding */
+        text-align: center; /* Center align content */
+        background-color: #fff; /* Ensure background color */
+        border-radius: 8px; /* Ensure border-radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ensure box shadow */
+    }
+
+    .profile-pic {
+        width: 150px; /* Adjusted size */
+        height: 150px; /* Adjusted size */
+        margin-right: 20px; /* Optional: Adjust margin for spacing */
+    }
+
+    .additional-info {
+        width: 100%; /* Full width */
+        max-width: 800px; /* Set a max-width for better responsiveness */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        padding: 20px; /* Adjust padding */
+        background-color: #fff; /* Ensure background color */
+        border-radius: 8px; /* Ensure border-radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ensure box shadow */
+    }
+
+    .recent-changes {
+        width: 90%; /* Adjusted width */
+        max-width: 800px; /* Set a max-width for better responsiveness */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        padding: 20px; /* Adjusted padding */
+        text-align: center; /* Center align text */
+        background-color: #fff; /* Ensure background color */
+        border-radius: 8px; /* Ensure border-radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ensure box shadow */
+    }
+
+    .sidebar {
+        width: 100%; /* Full width */
+        max-width: 800px; /* Set a max-width for better responsiveness */
+        margin-left: auto; /* Center horizontally */
+        margin-right: auto; /* Center horizontally */
+        padding: 20px; /* Adjust padding */
+        background-color: #fff; /* Ensure background color */
+        border-radius: 8px; /* Ensure border-radius */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ensure box shadow */
+    }
+
+    .sidebar h3 {
+        font-size: 20px; /* Adjusted font size */
+        text-align: center; /* Center align text */
+    }
+
+    .sidebar ul li {
+        text-align: center; /* Center align list items */
+    }
+  
+/*     header .search button {
+        width: 80px; 
+        padding: 8px; 
+        margin-left: -2px; 
+        border-radius: 0 4px 4px 0; 
+    }
+
+  
+    header .search button {
+        width: 100px; 
+        margin-left: 10px; 
+    }
+
+  
+    header .search {
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-wrap: nowrap; 
+    } */
+
+}
+
+@media screen and (max-width: 480px) {
+    .profile-pic {
+        width: 120px; /* Further reduced size */
+        height: 120px; /* Further reduced size */
+        margin-right: 10px; /* Optional: Adjust margin for spacing */
+    }
+
+    .sidebar {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .sidebar h3 {
+        font-size: 18px; /* Adjusted font size */
+    }
+
+    .sidebar ul li {
+        text-align: center; /* Center align list items */
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti - Things to Do</title>
+    <link rel="stylesheet" href="itinerary.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/logo.jpg" alt="TANITI Logo" class="logo-img">
+            <span class="logo-text">TANITI</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Hotel.html">Hotel</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="itinerary.html">Things to Do</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">Search</button>
+        </div>  
+    </header>
+
+    <section id="things-to-do">
+        <h2>What are things we can do?</h2>
+        <p>Most people visit Taniti to enjoy the beaches, explore the rainforest, and visit the volcano. However, there are other things to do as well, including visiting a local history museum, going on chartered fishing tours, snorkeling, zip-lining in the rainforest, visiting several pubs including a microbrewery, dancing at a new dance club, seeing a movie, taking helicopter rides, playing at an arcade, visiting art galleries, and bowling! Also, the golf course will be included by next year. Make sure to visit restaurants! They serve local fish and rice, American-style meals, and Pan-Asian cuisines. If you're not up for anything, you can take a local run to a grocery store. Taniti has two smaller grocery stores and one convenience store that is open 24 hours a day.</p>
+        <!-- Add Activities and Attractions section -->
+        <div class="activities-section">
+            <h3>Activities and Attractions</h3>
+            <div class="activity-images">
+                <div class="activity">
+                    <img src="photos/outdoors.jpg" alt="Outdoors">
+                    <p>Outdoors</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/attractions.jpg" alt="Attractions">
+                    <p>Attractions</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/restaurant.jpg" alt="Restaurants">
+                    <p>Restaurants</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/amusement.jpg" alt="Fun and Amusement">
+                    <p>Fun and Amusement</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/arts.jpg" alt="Arts">
+                    <p>Arts</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/culture.jpg" alt="Culture">
+                    <p>Culture</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/sports.jpg" alt="Sports">
+                    <p>Sports</p>
+                </div>
+                <div class="activity">
+                    <img src="photos/shopping.jpg" alt="Shopping">
+                    <p>Shopping</p>
+                </div>
+            </div>
+        </div>
+        <!-- <img src="itinerary.jpg" alt="Things to Do"> -->
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Hotel.html">Hotel</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="itinerary.html">Things to Do</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2024 Taniti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Do you want to clear the search results?</p>
+            <button type="button" onclick="clearHighlights()">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Profile</title>
+    <link rel="stylesheet" href="gitpage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism-tomorrow.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>My Developer Profile</h1>
+    </header>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>Hello! I am a passionate developer skilled in various programming languages and technologies. Below are some of the languages I am proficient in.</p>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python</li>
+            <li>C#</li>
+            <li>JavaScript</li>
+            <li>HTML & CSS</li>
+            <li>SQL</li>
+        </ul>
+    </section>
+    <section class="code-snippet">
+        <h2>Code Snippet - Python</h2>
+        <pre><code class="language-python">// My current Python Signature based scanner //
+def scan_directory_with_progress(directory, scan_type):
+    total_files = 0
+    scanned_files = 0
+    malware_count = 0
+    malware_paths = []
+
+    for root, _, files in os.walk(directory):
+        total_files += len(files)
+
+    for root, _, files in os.walk(directory):
+        for filename in files:
+            file_path = os.path.join(root, filename)
+            md5_hash = md5_checksum(file_path)
+            scanned_files += 1
+            progress = (scanned_files / total_files) * 100
+            print(f"Scanning: {file_path} | Progress: {progress:.2f}%")
+
+            # Scan the file based on the specified scan type
+            result = scan_file(file_path, scan_type)
+            if result != "File is clean":
+                malware_count += 1
+                malware_paths.append(file_path)
+                print(result)</code></pre>
+    </section>
+    <section class="github">
+        <h2>My GitHub</h2>
+        <a href="https://github.com/mwaygp" target="_blank">
+            <img src="photos/github.png" alt="GitHub Screenshot">
+            <p>Visit my GitHub profile</p>
+        </a>
+    </section>
+    <div class="back-button">
+        <a href="index.html">Back to Odyssey</a>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Developer Profile</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,356 @@
+/* first design */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chip-body {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indent {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    border: 2px solid white;
+}
+
+.pins {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    padding: 0 10px;
+}
+
+.pin {
+    width: 10px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 0 0 2px 2px;
+    margin: 0 2px;
+    box-shadow: 0 4px 2px -2px gray;
+} 
+
+
+
+
+
+
+/* new design */
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chip-body {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indent {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    border: 2px solid white;
+}
+
+.chip-text {
+    color: white; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 1.2em; 
+}
+
+.pins {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    padding: 0 10px;
+}
+
+.pin {
+    width: 10px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 0 0 2px 2px;
+    margin: 0 2px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+
+.signals {
+    position: absolute;
+    top: 120px; 
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.signal {
+    width: 2px;
+    height: 300px;
+    background-color: lightblue;
+    animation: flicker 1.5s infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.signal a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+}
+
+/* Keep the existing CSS up to .signals class */
+
+.signal1 {
+    left: 3%; /* Adjust the position for signal 1 */
+}
+
+.signal2 {
+    left: 2%; /* Adjust the position for signal 2 */
+}
+
+.signal3 {
+    left: 1%; /* Adjust the position for signal 3 */
+}
+
+.signal4 {
+    left: 0%; /* Adjust the position for signal 4 */
+}
+
+.signal5 {
+    left: 0%; /* Adjust the position for signal 5 */
+}
+
+.signal6 {
+    left: -1%; /* Adjust the position for signal 6 */
+}
+
+.signal7 {
+    left: -2%; /* Adjust the position for signal 7 */
+}
+
+.signal8 {
+    left: -3%; /* Adjust the position for signal 8 */
+}
+
+/* Continue with the remaining CSS */
+
+
+@keyframes flicker {
+    0% { background-color: lightblue; }
+    100% { background-color: darkblue; }
+}
+
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.chip-body {
+    width: 200px;
+    height: 100px;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.indent {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    top: 40px;
+    border: 2px solid white;
+}
+
+.chip-text {
+    color: white; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    font-size: 1.2em; 
+}
+
+.pins {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    bottom: -20px;
+    padding: 0 10px;
+}
+
+.pin {
+    width: 10px;
+    height: 20px;
+    background-color: silver;
+    border-radius: 0 0 2px 2px;
+    margin: 0 2px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+.pins.top {
+    top: -20px; /* Adjusted position for top pins */
+    bottom: auto; /* Reset bottom position for top pins */
+    transform: scaleY(-1); /* Flip the pins vertically */
+}
+
+.signals {
+    position: absolute;
+    top: 120px; 
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.signal {
+    width: 2px;
+    height: 300px;
+    background-color: lightblue;
+    animation: flicker 1.5s infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.signal a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    writing-mode: vertical-rl;
+}
+
+/* Keep the existing CSS up to .signals class */
+
+.signal1 {
+    left: 3%; /* Adjust the position for signal 1 */
+}
+
+.signal2 {
+    left: 2%; /* Adjust the position for signal 2 */
+}
+
+.signal3 {
+    left: 1%; /* Adjust the position for signal 3 */
+}
+
+.signal4 {
+    left: 0%; /* Adjust the position for signal 4 */
+}
+
+.signal5 {
+    left: 0%; /* Adjust the position for signal 5 */
+}
+
+.signal6 {
+    left: -1%; /* Adjust the position for signal 6 */
+}
+
+.signal7 {
+    left: -2%; /* Adjust the position for signal 7 */
+}
+
+.signal8 {
+    left: -3%; /* Adjust the position for signal 8 */
+}
+
+/* Continue with the remaining CSS */
+
+
+@keyframes flicker {
+    0% { background-color: lightblue; }
+    100% { background-color: darkblue; }
+}

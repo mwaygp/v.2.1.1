@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti - FAQ</title>
+    <link rel="stylesheet" href="faq.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/logo.jpg" alt="TANITI Logo" class="logo-img">
+            <span class="logo-text">TANITI</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Hotel.html">Hotel</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="itinerary.html">Things to Do</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">Search</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="faq">
+            <div class="faq-search">
+                <input type="text" id="faqSearchInput" placeholder="Search FAQs...">
+                <button type="button" onclick="searchFaq()">Search</button>
+                <button class="clear-search" onclick="clearSearch()">Clear Search</button>
+            </div>
+            
+
+            <h2>Frequently Asked Questions</h2>
+            <ul id="faqList">
+                <li><strong>How do you get to the island?</strong> Either by air or on a small cruise ship that docks in Yellow Leaf Bay for one night per week. Taniti is served by a small airport that can accommodate small jets and propeller planes. Taniti is in the process of expanding the airport so larger jets will be able to land on the island within the next few years.</li>
+                <li><strong>What is the voltage of power outlets?</strong> Power outlets are 120 volts.</li>
+                <li><strong>When is alcohol not served or sold?</strong> Between the hours of midnight and 9:00 a.m.</li>
+                <li><strong>What is the drinking age on Taniti?</strong> It’s 18 years old and the drinking age is not strictly enforced.</li>
+                <li><strong>Can Tanitians speak English?</strong> Many younger Tanitians speak fluent English. However, very little English is spoken in rural areas, especially by the older residents.</li>
+                <li><strong>How many hospitals are there and are they able to speak English?</strong> There is one hospital and several clinics. The hospital has many multilingual employees.</li>
+                <li><strong>Does Taniti have a lot of crime?</strong> It’s very rare on Taniti but as tourism increases there are more reports of pickpocketing and other petty crimes.</li>
+                <li><strong>What currency does Taniti use?</strong> Taniti uses the U.S. dollar as its currency but many businesses will also accept euros and yen.</li>
+                <li><strong>Does Taniti enjoy national holidays?</strong> Taniti enjoys many national holidays and many tourist attractions and restaurants will be closed on holidays.</li>
+                <li><strong>What is the climate like on Taniti?</strong> Taniti has a tropical climate with warm temperatures year-round and a distinct wet and dry season.</li>
+                <li><strong>What activities can you do on Taniti?</strong> Popular activities include snorkeling, scuba diving, hiking, and exploring the island's cultural sites and natural beauty.</li>
+                <li><strong>Are there any special customs or traditions to be aware of?</strong> Yes, Tanitians have many unique customs and traditions. Visitors should be respectful of local practices, especially during religious or cultural events.</li>
+                <li><strong>What is the best time to visit Taniti?</strong> The best time to visit is during the dry season, from May to October, when the weather is most pleasant.</li>
+                <li><strong>Is there public transportation available on the island?</strong> Public transportation is limited. Many visitors rent cars or bicycles to explore the island.</li>
+                <li><strong>Are there any wildlife or nature reserves on Taniti?</strong> Yes, Taniti has several nature reserves that protect its unique flora and fauna.</li>
+                <li><strong>Can I use my credit card on Taniti?</strong> Most major credit cards are accepted in hotels and larger businesses, but it's a good idea to carry some cash for smaller establishments.</li>
+                <li><strong>Is it safe to drink tap water on Taniti?</strong> Tap water in major towns is generally safe to drink, but it's recommended to stick to bottled water in rural areas.</li>
+                <li><strong>Do I need any vaccinations before traveling to Taniti?</strong> No specific vaccinations are required for travel to Taniti, but it's always a good idea to check with your doctor before traveling.</li>
+                <li><strong>Are there any dangerous animals on Taniti?</strong> Taniti is generally free from dangerous animals. However, visitors should be cautious of marine life like jellyfish when swimming.</li>
+                <li><strong>What is the local cuisine like?</strong> Tanitian cuisine features a mix of tropical fruits, fresh seafood, and traditional dishes with influences from various cultures.</li>
+                <li><strong>Can I rent equipment for water sports on Taniti?</strong> Yes, there are several rental shops that offer equipment for snorkeling, scuba diving, and other water sports.</li>
+                <li><strong>Are there guided tours available?</strong> Yes, there are many guided tours available that cover different aspects of the island, from nature walks to historical tours.</li>
+                <li><strong>How can I connect with the local culture?</strong> Visiting local markets, attending cultural festivals, and interacting with residents are great ways to connect with the local culture.</li>
+                <li><strong>Is there Wi-Fi available on the island?</strong> Wi-Fi is available in most hotels and some public areas, but the speed and reliability can vary.</li>
+                <li><strong>What should I pack for a trip to Taniti?</strong> Pack light, breathable clothing, swimwear, sunscreen, insect repellent, and any personal medications you may need.</li>
+                <li><strong>Are there any special events or festivals on Taniti?</strong> Taniti hosts several festivals throughout the year, celebrating everything from traditional music and dance to local cuisine.</li>
+                <li><strong>Is tipping expected in restaurants and hotels?</strong> Tipping is appreciated but not always expected. A small tip for good service is a nice gesture.</li>
+                <li><strong>Can I hire a local guide for personal tours?</strong> Yes, hiring a local guide can enhance your experience and provide in-depth knowledge about the island.</li>
+                <li><strong>Are there any restrictions on photography?</strong> Generally, photography is allowed, but always ask for permission when photographing people or inside religious sites.</li>
+                <li><strong>What are some must-see attractions on Taniti?</strong> Must-see attractions include the Taniti Botanical Gardens, the historic Old Town, and the stunning beaches of Coral Cove.</li>
+            </ul>
+        </section>
+    </main>
+
+    <div id="chatbot" class="chatbot">
+        <div class="chatbot-header">
+            <h3>Chatbot</h3>
+            <button class="close-chatbot" onclick="toggleChatbot()">×</button>
+        </div>
+        <div class="chatbot-body">
+            <p>Hi! How can I help you?</p>
+            <!-- Chat content will go here -->
+        </div>
+        <div class="chatbot-footer">
+            <input type="text" id="chatbotInput" placeholder="Type a message...">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Hotel.html">Hotel</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="itinerary.html">Things to Do</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2024 Taniti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Do you want to clear the search results?</p>
+            <button type="button" onclick="clearHighlights()">Clear</button>
+        </div>
+    </div>
+
+    <script src="scriptfaq.js"></script>
+</body>
+</html>
+
+
+
+

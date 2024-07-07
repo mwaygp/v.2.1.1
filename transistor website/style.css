@@ -1,0 +1,268 @@
+/* Common CSS for both desktop and mobile */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dbdbd4;
+    margin: 0;
+}
+
+.circuit {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff; /* White background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.battery {
+    width: 100px; /* Initial width */
+    height: 50px; /* Initial height */
+    background: linear-gradient(to right, #8B4513 30%, #333 30%); /* Brown to black gradient */
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    border: 2px solid #000;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.battery::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 2px 2px 0 0;
+}
+
+.battery a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+}
+
+.circle-table {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Initial width */
+    height: 600px; /* Initial height */
+    border-radius: 50%;
+    background-color: rgba(139, 69, 19, 0.8); /* Brown color with transparency */
+    border: 5px solid #8B4513; /* Darker brown border for the table edge */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5); /* Inner shadow for depth */
+    z-index: -20;
+    overflow: hidden; /* Ensure lines don't overflow */
+    margin: 0 auto; /* Center the table horizontally */
+}
+
+.circle-table::before, .circle-table::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark line color */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.circle-table::after {
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.white-object {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px; /* Initial width */
+    height: 120px; /* Initial height */
+    background-color: #fff;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 2;
+}
+
+.emitter {
+    width: 30px; /* Initial width */
+    height: 30px; /* Initial height */
+    background-color: #00f;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00f;
+    animation: glow 1s infinite alternate;
+}
+
+.wire {
+    display: none; /* Remove the gray line */
+}
+
+.diodes {
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-gap: 2px; /* Reduced gap */
+    padding: 5px;
+}
+
+.diode {
+    width: 10px; /* Initial width */
+    height: 10px; /* Initial height */
+    background-color: #ff0;
+    border-radius: 50%;
+    animation: flash 3s infinite;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #00f;
+    }
+    to {
+        box-shadow: 0 0 20px #00f;
+    }
+}
+
+@keyframes flash {
+    0%, 100% {
+        background-color: rgb(0, 255, 64);
+    }
+    50% {
+        background-color: #f00;
+    }
+    20% {
+        background-color: rgb(204, 192, 17);
+    }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .battery {
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    .white-object {
+        width: 300px;
+        height: 100px;
+    }
+    .emitter {
+        width: 20px;
+        height: 20px;
+    }
+    .diode {
+        width: 8px;
+        height: 8px;
+    }
+    .circle-table {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 992px) {
+    .battery {
+        width: 70px;
+        height: 35px;
+        font-size: 10px;
+    }
+    .white-object {
+        width: 250px;
+        height: 80px;
+    }
+    .emitter {
+        width: 15px;
+        height: 15px;
+    }
+    .diode {
+        width: 6px;
+        height: 6px;
+    }
+    .circle-table {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .battery {
+        width: 60px;
+        height: 30px;
+        font-size: 8px;
+    }
+    .white-object {
+        width: 200px;
+        height: 60px;
+    }
+    .emitter {
+        width: 10px;
+        height: 10px;
+    }
+    .diode {
+        width: 5px;
+        height: 5px;
+    }
+    .circle-table {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .battery {
+        width: 60px;
+        height: 25px;
+        font-size: 6px;
+    }
+    .white-object {
+        width: 140px;
+        height: 50px;
+    }
+    .emitter {
+        width: 8px;
+        height: 8px;
+    }
+    .diode {
+        width: 4px;
+        height: 4px;
+    }
+    .circle-table {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Taniti - About Us</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+        <a href="home.html" class="logo">
+            <img src="photos/logo.jpg" alt="TANITI Logo" class="logo-img">
+            <span class="logo-text">TANITI</span>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="Hotel.html">Hotel</a></li>
+                <li><a href="transportation.html">Transportation</a></li>
+                <li><a href="itinerary.html">Things to Do</a></li>
+                <li><a href="Faq.html">FAQ</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button type="button" onclick="search()">Search</button>
+        </div>  
+    </header>
+    <main>
+        <section id="about-section" class="section">
+            <div class="container">
+                <h2>About Taniti</h2>
+                <p>Taniti is a small tropical island in the Pacific. While the island has an area of less than 500 square miles, the terrain is varied and includes both sandy and rocky beaches, a small but safe harbor, lush tropical rainforests, and a mountainous interior that includes a small active volcano. Taniti has an indigenous population of about 20,000. Until a recent increase in tourism, most of the Tanitian economy was dominated by fishing or agriculture.</p>
+                <h2>Our Team</h2>
+                <p>Meet the dedicated team behind Taniti's tourism industry:</p>
+                <div class="team-member">
+                    <img src="photos/teammember1.jpg" alt="Team Member 1" style="width: 100px;">
+                    <h3>John Doe</h3>
+                    <p>Role: Tour Guide</p>
+                </div>
+                <div class="team-member">
+                    <img src="photos/teammember2.jpg" alt="Team Member 2" style="width: 100px;">
+                    <h3>Jane Smith</h3>
+                    <p>Role: Hospitality Manager</p>
+                </div>
+                <!-- Add more team members as needed -->
+            </div>
+        </section>
+        
+        
+        
+        
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Hotel.html">Hotel</a></li>
+                    <li><a href="transportation.html">Transportation</a></li>
+                    <li><a href="itinerary.html">Things to Do</a></li>
+                    <li><a href="Faq.html">FAQ</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+            <div class="copyright">
+                <p>&copy; 2024 Taniti. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="clearModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Do you want to clear the search results?</p>
+            <button type="button" onclick="clearHighlights()">Clear</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

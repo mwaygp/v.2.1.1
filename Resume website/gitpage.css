@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+section {
+    margin: 2rem auto;
+    max-width: 800px;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    background-color: #e0e0e0;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+.code-snippet pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    white-space: pre-wrap; /* Allow the code to wrap and fit within the container */
+    word-wrap: break-word; /* Ensure long words break to fit within the container */
+}
+
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    width: 100%;
+    
+}
+
+footer p {
+    margin: 0;
+    padding: 0.5rem; /* Changed from previous padding value */
+}
+
+.github img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.github a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github a:hover {
+    text-decoration: underline;
+}
+
+.github p {
+    text-align: center;
+    font-weight: bold;
+}
+
+/* .back-button {
+    text-align: right;
+    margin-top: 5px;
+} */
+
+.back-button {
+    text-align: right;
+    margin: 20px auto; /* Add margin for better spacing */
+    max-width: 800px; /* Align with section width */
+    padding: 0 1rem; /* Match padding with sections */
+}
+
+/* .back-button a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+
+.back-button a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added box-shadow for a slight lift effect */
+}
+
+.back-button a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .skills li {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    .code-snippet pre {
+        padding: 0.75rem; /* Reduce padding on smaller screens */
+    }
+    footer {
+        padding: 0.75rem; /* Reduce footer padding on smaller screens */
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Reduce footer text size */
+    }
+
+    .back-button {
+        text-align: center; /* Center align for smaller screens */
+        margin: 10px 1rem; /* Adjust margin for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+        padding: 0.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    .skills li {
+        margin: 0.25rem;
+        padding: 0.25rem;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+
+    footer p {
+        font-size: 0.85rem; /* Further reduce footer text size */
+    }
+
+    .code-snippet pre {
+        font-size: 0.85rem; /* Reduce font size for better fit on small screens */
+        padding: 0.5rem; /* Further reduce padding */
+    }
+
+    .back-button a {
+        font-size: 16px; /* Adjust font size for smaller screens */
+        padding: 8px 12px; /* Adjust padding for smaller screens */
+    }
+}
+

@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #ccc;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px auto 0;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    margin: 10px;
+    max-width: 920px;
+}
+
+.stat-box img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.about-me {
+    margin-top: 20px;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* .skill-box {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 300px;
+    margin: 10px;
+}
+
+.skill-box img {
+    max-width: 50px;
+    margin-bottom: 10px;
+} */
+
+.skill-box {
+    background: #fff;
+    padding: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    flex: 1 1 500px;
+    margin: 10px;
+    max-width: 500px; /* Ensure all skill boxes have the same maximum width */
+}
+
+.skill-box img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Ensure all images have the same maximum height */
+    object-fit: cover; /* Ensure images cover the area without stretching */
+}
+
+.skill-box h3 {
+    margin-top: 10px;
+}
+
+.back-button {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: #3498db;
+    font-size: 18px;
+    border: 1px solid #3498db;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+.back-button a:hover {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .header h2 {
+        font-size: 1.2em;
+    }
+
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+    }
+
+    .stat-box, .skill-box {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 30px 0;
+    }
+
+    .header h1 {
+        font-size: 1.2em;
+    }
+
+    .header h2 {
+        font-size: 1em;
+    }
+
+    .profile-pic {
+        width: 80px;
+        height: 80px;
+    }
+}
+

@@ -1,0 +1,206 @@
+/* Original CSS code */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.content {
+    position: relative;
+    background-color: black;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 700px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 10;
+}
+
+.content h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.signal {
+    position: absolute;
+    background-color: lightblue;
+    animation: flicker 1.5s infinite alternate;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.signal a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+
+.signal1 { 
+    top: 0;
+    left: 34%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.signal2 { 
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.signal3 { 
+    top: 0;
+    left: 66%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.signal4 { 
+    bottom: 0;
+    left: 34%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.signal5 { 
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+.signal6 { 
+    bottom: 0;
+    left: 66%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 50%;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}
+
+@keyframes flicker {
+    0% { background-color: lightblue; }
+    100% { background-color: darkblue; }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+    .content {
+        width: 85%; /* Smaller width */
+        height: 260px; /* Smaller height */
+        max-width: none;
+        padding: 15px; /* Adjust padding for smaller size */
+        box-sizing: border-box;
+    }
+
+    .content h1 {
+        font-size: 1.4em; /* Smaller font size */
+    }
+
+    .signal {
+        font-size: 0.6em; /* Smaller font size */
+    }
+
+    .signal1, .signal2, .signal3 {
+        top: -130px; /* Adjust for connection */
+        height: calc(50% + 150px);
+    }
+
+    .signal4, .signal5, .signal6 {
+        bottom: -130px; /* Adjust for connection */
+        height: calc(50% + 150px);
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .content {
+        width: 85%; /* Slightly bigger width */
+        height: 280px; /* Slightly bigger height */
+        max-width: none;
+    }
+
+    .content h1 {
+        font-size: 2.2em;
+    }
+
+    .signal1, .signal2, .signal3 {
+        top: -140px; /* Adjust for connection */
+        height: calc(50% + 150px);
+    }
+
+    .signal4, .signal5, .signal6 {
+        bottom: -140px; /* Adjust for connection */
+        height: calc(50% + 150px);
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .content {
+        width: 70%;
+        max-width: 700px;
+        height: 300px;
+    }
+
+    .content h1 {
+        font-size: 2.5em;
+    }
+
+    .signal1, .signal2, .signal3 {
+        top: 0;
+        height: 50%;
+    }
+
+    .signal4, .signal5, .signal6 {
+        bottom: 0;
+        height: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+

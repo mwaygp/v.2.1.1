@@ -1,0 +1,6 @@
+virus_file_1.exe hash_of_virus_file_1
+virus_file_2.exe hash_of_virus_file_2
+# Add more virus file hashes here
+
+(known_virus_signatures, known_spyware_signatures, known_rootkit_signatures)
+

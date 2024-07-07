@@ -1,0 +1,332 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+html {
+    height: 100%;
+}
+
+header {
+    background-color: #003B6D;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+}
+
+header .logo img {
+    height: 50px;
+}
+
+header .header-right {
+    display: flex;
+    align-items: center;
+}
+
+header .consultation {
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+header .search-bar {
+    display: flex;
+}
+
+header .search-bar input {
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+}
+
+header .search-bar button {
+    padding: 5px 10px;
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 0;
+}
+
+nav {
+    background-color: #003B6D;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+nav ul li {
+    margin: -60px 20px 0;
+    line-height: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+main {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.hero {
+    background-image: url('hero_image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero .hero-text {
+    background-color: rgba(0, 59, 109, 0.8);
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero .cta-button {
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.about, .services, .contact, .additional-info {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-box {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form label {
+    margin-top: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #6699CC;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #003B6D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    margin-top: -30px; 
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    margin-left: 30px;
+}
+
+footer p.copyright {
+    margin-left: 0px;
+}
+
+.service-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .header-right {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .consultation {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    header .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .contact form {
+        width: 100%;
+    }
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer p {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    header .consultation {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    header .search-bar input,
+    header .search-bar button {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        padding: 5px 10px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        padding: 30px 10px;
+    }
+
+    .hero .cta-button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .about, .services, .contact, .additional-info {
+        padding: 15px;
+    }
+
+    .contact form input,
+    .contact form select,
+    .contact form textarea,
+    .contact form button {
+        font-size: 14px;
+    }
+}
+
